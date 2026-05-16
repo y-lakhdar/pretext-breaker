@@ -1,4 +1,4 @@
-# @ylakhdar/pretext-breaker
+# pretext-breaker
 
 A configurable text-rendered block breaker easter egg for React apps.
 
@@ -7,7 +7,7 @@ A configurable text-rendered block breaker easter egg for React apps.
 ## Installation
 
 ```bash
-pnpm add @ylakhdar/pretext-breaker
+pnpm add pretext-breaker
 ```
 
 ## Local Development
@@ -22,8 +22,8 @@ pnpm build
 ## Basic Usage
 
 ```tsx
-import '@ylakhdar/pretext-breaker/styles.css';
-import { PretextBreaker } from '@ylakhdar/pretext-breaker';
+import 'pretext-breaker/styles.css';
+import { PretextBreaker } from 'pretext-breaker';
 
 export function GlobalEasterEgg() {
   return <PretextBreaker />;

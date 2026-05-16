@@ -1,5 +1,5 @@
 {
-  "name": "@ylakhdar/pretext-breaker",
+  "name": "pretext-breaker",
   "version": "0.1.0",
   "description": "A configurable text-rendered block breaker easter egg for React apps.",
   "type": "module",
@@ -41,9 +41,6 @@
   "sideEffects": [
     "./dist/styles.css"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsc -p tsconfig.json && pnpm run copy:css",
     "copy:css": "mkdir -p dist && cp src/styles.css dist/styles.css",
