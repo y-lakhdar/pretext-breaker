@@ -37,7 +37,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build library
-        run: pnpm --filter @ylakhdar/pretext-breaker build
+        run: pnpm --filter pretext-breaker build
 
       - name: Build demo
         run: pnpm --filter demo build

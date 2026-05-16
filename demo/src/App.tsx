@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { PretextBreaker } from '@ylakhdar/pretext-breaker';
-import '@ylakhdar/pretext-breaker/styles.css';
+import { PretextBreaker } from 'pretext-breaker';
+import 'pretext-breaker/styles.css';
 import './App.css';
 
 const features = [
@@ -17,7 +17,7 @@ export default function App() {
       <main className="page-shell">
         <section className="hero">
           <div className="eyebrow">Demo</div>
-          <h1>@ylakhdar/pretext-breaker</h1>
+          <h1>pretext-breaker</h1>
           <p className="hero-copy">
             React component for turning document content into a playable block breaker overlay.
           </p>
@@ -29,7 +29,7 @@ export default function App() {
             <a href="https://github.com/y-lakhdar/pretext-breaker" className="secondary-action" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a href="https://www.npmjs.com/package/@ylakhdar/pretext-breaker" className="secondary-action" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.npmjs.com/package/pretext-breaker" className="secondary-action" target="_blank" rel="noopener noreferrer">
               npm
             </a>
           </div>
@@ -44,12 +44,12 @@ export default function App() {
           <article className="panel stack-gap">
             <h2>Install</h2>
             <pre>
-              <code>pnpm add @ylakhdar/pretext-breaker</code>
+              <code>pnpm add pretext-breaker</code>
             </pre>
             <h2>Mount once</h2>
             <pre>
-              <code>{`import '@ylakhdar/pretext-breaker/styles.css';
-import { PretextBreaker } from '@ylakhdar/pretext-breaker';
+              <code>{`import 'pretext-breaker/styles.css';
+import { PretextBreaker } from 'pretext-breaker';
 
 export function App() {
   return (
@@ -130,7 +130,7 @@ export function App() {
             <a href="https://github.com/y-lakhdar/pretext-breaker" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a href="https://www.npmjs.com/package/@ylakhdar/pretext-breaker" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.npmjs.com/package/pretext-breaker" target="_blank" rel="noopener noreferrer">
               npm
             </a>
           </div>

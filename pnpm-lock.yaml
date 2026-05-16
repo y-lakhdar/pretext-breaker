@@ -33,7 +33,7 @@ importers:
 
   demo:
     dependencies:
-      '@ylakhdar/pretext-breaker':
+      pretext-breaker:
         specifier: workspace:*
         version: link:..
       react:
