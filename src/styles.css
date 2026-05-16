@@ -1,0 +1,48 @@
+.pretext-breaker__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.pretext-breaker__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+}
+
+.pretext-breaker__exit-button {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  background: rgba(15, 20, 30, 0.85);
+  border: 1px solid #95edff;
+  color: #95edff;
+  padding: 4px 14px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  z-index: 100000;
+  letter-spacing: 1px;
+}
+
+.pretext-breaker__exit-button:hover {
+  background: #95edff;
+  color: #07111c;
+}
+
+.pretext-breaker__loading {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(15, 20, 30, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #95edff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  letter-spacing: 2px;
+}

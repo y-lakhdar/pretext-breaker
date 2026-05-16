@@ -1,0 +1,80 @@
+{
+  "name": "@ylakhdar/pretext-breaker",
+  "version": "0.1.0",
+  "description": "A configurable text-rendered block breaker easter egg for React apps.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y-lakhdar/pretext-breaker.git"
+  },
+  "homepage": "https://github.com/y-lakhdar/pretext-breaker#readme",
+  "bugs": {
+    "url": "https://github.com/y-lakhdar/pretext-breaker/issues"
+  },
+  "keywords": [
+    "react",
+    "game",
+    "easter-egg",
+    "breakout",
+    "canvas",
+    "pretext",
+    "konami"
+  ],
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "sideEffects": [
+    "./dist/styles.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && pnpm run copy:css",
+    "copy:css": "mkdir -p dist && cp src/styles.css dist/styles.css",
+    "dev": "tsc -w -p tsconfig.json",
+    "lint": "oxlint src/",
+    "lint:fix": "oxlint --fix src/",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "pack:dry": "pnpm pack --dry-run",
+    "knip": "knip"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "knip": "^6.13.1",
+    "oxlint": "^1.64.0",
+    "playwright": "^1.60.0",
+    "react": "19.2.5",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a"
+}
